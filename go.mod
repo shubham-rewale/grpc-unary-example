@@ -1,4 +1,4 @@
-module go-learning/grpc-unary-example
+module github.com/shubham-rewale/grpc-unary-example
 
 go 1.18
 

@@ -3,8 +3,9 @@ package main
 import (
 	"context"
 	"fmt"
-	user_pb "go-learning/grpc-unary-example/gen/go/user/v1"
 	"log"
+
+	user_pb "github.com/shubham-rewale/grpc-unary-example/gen/go/user/v1"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"

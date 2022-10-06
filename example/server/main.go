@@ -5,7 +5,7 @@ import (
 	"log"
 	"net"
 
-	user_pb "go-learning/grpc-unary-example/gen/go/user/v1"
+	user_pb "github.com/shubham-rewale/grpc-unary-example/gen/go/user/v1"
 
 	"google.golang.org/grpc"
 )
@@ -25,7 +25,7 @@ func main() {
 	lis, err := net.Listen("tcp", ":8080")
 
 	if err != nil {
-		log.Fatal("Failed to Listen with error %v", err)
+		log.Fatalf("Failed to Listen with error %v", err)
 	}
 
 	grpcServer := grpc.NewServer()
